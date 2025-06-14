@@ -31,8 +31,8 @@ The final dashboard includes:
 ## 🧰 Tools & Technologies
 
 - **SQL (Google BigQuery)** – RFM scoring & pipeline creation  
-- **Python** – Sampling and data preprocessing  
-- **K-Means Clustering** – Customer segmentation  
+- **SQL** – Sampling and data preprocessing ( USING BIG QUERY) 
+- **K-Means Clustering** – Customer segmentation  ( USING BIG QUERY) 
 - **Tableau** – Visualizing RFM segments and KPIs  
 - **Git / GitHub** – Version control and collaboration  
 
@@ -46,10 +46,3 @@ SQL-CustomerSegmentation/
 │ └── amazon_rfm_pipeline.sql
 ├── Tableau/
 │ └── Amazon_RFM_Dashboard.twbx
-
-## 🧰 Tools & Technologies
-
-- **SQL (Google BigQuery)**
-- ** SQL (for data prep and sampling)**
-- **Tableau (for dashboard visualization)**
-- **Git / GitHub (for version control)**
