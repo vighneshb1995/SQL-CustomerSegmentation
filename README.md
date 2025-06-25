@@ -20,13 +20,17 @@ Rather than relying on static thresholds (e.g., "Recency > 30 days = inactive"),
 - More statistically balanced clusters  
 - Eliminates manual bias and hardcoded cutoffs
 
+## Employed K-Menns Clustering 
+
 ## 📈 Tableau Dashboard
 
 The final dashboard includes:
 
-- **Cluster Distribution Bar Chart** to show customer counts in each segment  
-- **RFM Score Visualizations** using box plots and histograms  
-- **Segment Summary** with filters to analyze customer behavior across segments dynamically
+ - **KPI Cards: Total unique customers, average purchase frequency, recency (days since last purchase), and monetary value.
+
+ - **Scatter Plot: Customer recency vs. frequency, sized by total spend and colored by cluster.
+
+ - **Bar Chart: Percentage of customers in each RFM segment (Champions, Loyal Customers, Potential Loyalists, At Risk, Others).
 
 ## 🧰 Tools & Technologies
 
@@ -34,7 +38,39 @@ The final dashboard includes:
 - **SQL** – Sampling and data preprocessing ( USING BIG QUERY) 
 - **K-Means Clustering** – Customer segmentation  ( USING BIG QUERY) 
 - **Tableau** – Visualizing RFM segments and KPIs  
-- **Git / GitHub** – Version control and collaboration  
+- **Git / GitHub** – Version control and collaboration
+
+## 📈 Key Observations (dashboard insights)
+
+ - Customer Distribution
+
+ - Champions (~16.5%) and Loyal Customers (~18.8%) represent your most engaged buyers.
+
+ - Potential Loyalists (~35.9%) form the largest group—underscoring an opportunity to nurture these moderately engaged customers into higher tiers.
+
+ - At Risk & Others make up under 30% combined, indicating a focused re‑engagement target.
+
+ - Recency vs. Frequency Trade‑off
+
+ - High‑frequency customers cluster at low recency values (left side of scatter).
+
+ - Some high‑spend customers (large circles) have moderate frequency—ideal targets for loyalty programs.
+
+ - Monetary Highlights
+
+ - Circle sizes reveal a small subset of very high spenders (top‑right in scatter).
+
+ - These high‑value outliers are potential brand advocates or VIP members.
+
+ - Actionable Segmentation
+
+ - Champions: Reward with VIP access and premium promotions.
+
+ - Loyal Customers: Upsell and cross‑sell with tailored bundles.
+
+ - Potential Loyalists: Introduce loyalty incentives and personalized communications.
+
+ - At Risk / Others: Run win‑back campaigns and discount offers to re‑engage.
 
 ## 📁 Folder Structure
 
@@ -45,4 +81,4 @@ SQL-CustomerSegmentation/
 ├── SQL-BigQueryScripts/
 │ └── amazon_rfm_pipeline.sql
 ├── Tableau/
-│ └── Amazon_RFM_Dashboard.twbx
+│ └── Amazon_RFM_Dashboard.png
