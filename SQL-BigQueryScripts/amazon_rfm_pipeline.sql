@@ -1,3 +1,4 @@
+-- Run this in **BigQuery
 -- RFM & K-Means Pipeline 
 -- Author: Vighnesh B
 
