@@ -20,7 +20,15 @@ Rather than relying on static thresholds (e.g., "Recency > 30 days = inactive"),
 - More statistically balanced clusters  
 - Eliminates manual bias and hardcoded cutoffs
 
-## Employed K-Menns Clustering 
+## 🛠️ Why K‑Means Clustering?
+
+ **Beyond Rules: While RFM rules assign segments by fixed cutoffs, K‑Means identifies data‑driven groupings, capturing nuanced patterns in recency, frequency, and spend simultaneously.
+
+ **Scalability: K‑Means handles large volumes of customer records efficiently in BigQuery ML.
+
+ **Interpretability: Cluster centroids provide clear profiles (avg RFM scores) to label each group meaningfully.
+
+ **Flexibility: You can adjust num_clusters (chosen as 5) based on business needs and silhouette or elbow analysis.
 
 ## 📈 Tableau Dashboard
 
